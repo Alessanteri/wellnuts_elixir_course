@@ -16,7 +16,7 @@ defmodule Solution do
     end
   end
 
-  def check_longest_prefix(strs, str) do
+  defp check_longest_prefix(strs, str) do
     String.replace(
       Enum.reduce(0..(String.length(str) - 1), "", fn x, acc ->
         Enum.reduce_while(1..(length(strs) - 1), 0, fn y, ac ->
