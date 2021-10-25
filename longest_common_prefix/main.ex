@@ -5,7 +5,7 @@ defmodule Solution do
       length(strs) == 1 ->
         Enum.at(strs, 0)
 
-      length(strs) < 2 and length(strs) != 1 ->
+      length(strs) == 0 ->
         ""
 
       String.length(Enum.at(strs, 0)) == 0 ->
